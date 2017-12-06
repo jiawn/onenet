@@ -1,0 +1,5 @@
+buildtool=maven
+configpath=src/main/resources/
+language=java
+jdk=1.8
+springboot=true
