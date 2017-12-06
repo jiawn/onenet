@@ -51,5 +51,10 @@ pagehelper:
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql
+
+cmcc:
+  onenet:
+    drivceid: 566118
+    api-key: CbCDi846ndvqH7rsR9rd93DJ6OcA
     
     

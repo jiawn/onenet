@@ -35,6 +35,8 @@ public class AccessControlInterceptor extends HandlerInterceptorAdapter {
       add("/loginCode");
       add("/logout");
 
+      add("/");
+
     }
   };
 

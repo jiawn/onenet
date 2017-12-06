@@ -24,27 +24,12 @@ public enum Errors {
   SYSTEM_NO_ACCESS(7, "无权限访问"),
   //
   SYSTEM_REQUEST_PARAM_ERROR(8, "请求参数错误"),
-  //
-  SYSTEM_MAX_FILE_ERROR(9, "只能上传小于50MB的文件"),
 
   // 101-200，用户模块
   USER_LOGIN_ERROR(101, "用户名或密码错误"),
   //
   USER_NOT_FOND(102, "该用户不存在"),
-  //
-  USER_STATUS_ERROR(103, "修改用户状态不符合规则"),
-  APPID_NOT_FOUND(104, "无效的应用接入"),
-  TOKEN_ERROR(105, "令牌无效"),
-  USER_LOGIN_AWIFI_ERROR(106, "该用户未开通数字地图"),
 
-  // 1000-1010（短信推送管理）
-  SMS_PUSH_MOBILE_NOT_NULL(1000, "手机号不能为空"),
-  //
-  SMS_FAILED(1001, "发送短信失败"),
-  //
-  //
-  AUTO_REVIEW_TOKEN_INVALID(10011,"token无效"),
-  AUTO_REVIEW_FAIL(10011,"记录不可更改"),
 
   ;
 

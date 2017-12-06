@@ -90,25 +90,6 @@ public class ControllerAssist {
     }
     return ErrorResponseEntity.fail(HttpStatus.BAD_REQUEST.value(), error.code, exception, message, request);
   }
-  
-  /**
-   * 上传文件大小验证异常
-   * 
-   * @param exception
-   * @param request
-   * @return
-   */
-  @ExceptionHandler(MultipartException.class)
-  @ResponseStatus(value = HttpStatus.BAD_REQUEST)
-  @ResponseBody
-  public ErrorResponseEntity<?> handleMultipartException(MultipartException exception,
-      HttpServletRequest request) {
-    logger.info("", exception);
-    Errors error = Errors.SYSTEM_MAX_FILE_ERROR;
-    return ErrorResponseEntity.fail(HttpStatus.INTERNAL_SERVER_ERROR.value(), error.code, exception,
-        error.label, request);
-  }
-
 
   /**
    * 处理服务器端数据访问错误
